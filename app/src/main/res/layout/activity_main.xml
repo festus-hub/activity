@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_dark"
+    android:scrollbarSize="2dp"
+    tools:context=".MainActivity">
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Hello World!"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <Button
+        android:id="@+id/btn_int"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_dark"
+        android:scrollbarSize="2dp"
+        android:text="intent"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_web"
+        app:layout_constraintVertical_bias="0.444"
+        tools:layout_editor_absoluteX="130dp" />
+
+    <Button
+        android:id="@+id/btn_web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:scrollbarSize="2dp"
+        android:text="Web"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_int"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_cal"
+        app:layout_constraintVertical_bias="0.226" />
+
+    <Button
+        android:id="@+id/btn_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        android:text="calculator"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_web"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="104dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
