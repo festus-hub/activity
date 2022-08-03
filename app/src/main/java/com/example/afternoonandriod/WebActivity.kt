@@ -1,12 +1,12 @@
 package com.example.afternoonandriod
 
+import android.annotation.SuppressLint
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log.w
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AppCompatActivity
 
 class WebActivity : AppCompatActivity() {
     lateinit var wb_view:WebView
@@ -18,6 +18,7 @@ class WebActivity : AppCompatActivity() {
         webview()
     }
 
+    @SuppressLint("SetJavaScriptEnabled")
     @RequiresApi(Build.VERSION_CODES.O)
     private fun webview(){
         wb_view.webViewClient= WebViewClient()
